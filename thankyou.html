@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - Allcreds</title>
+  <meta http-equiv="refresh" content="5;url=index.html">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: rgba(255,255,255,0.8);
+      z-index: -1;
+    }
+    .container {
+      text-align: center;
+      padding: 10px 10px;
+      z-index: 10;
+      position: relative;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: -100px;
+      margin-top: 50px;
+      animation: floatLogo 3s ease-in-out infinite;
+    }
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-40px); }
+    }
+    h1 {
+      color: #009ec3;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    a {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00c6ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #009ec3;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -3;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- Canvas animation -->
+  <canvas id="background-canvas"></canvas>
+
+  <!-- Main Content -->
+  <div class="container">
+    <img src="images/logo2.png" alt="Allcreds Logo" class="logo">
+    <div id="lottie" style="height: 200px; margin: 20px auto;"></div>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully.</p>
+    <p>You’ll be redirected to the homepage shortly.</p>
+    <a href="index.html">Click here if not redirected</a>
+  </div>
+
+  <!-- Lottie Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://lottie.host/4cfc74ae-d067-474e-94df-1abf0d7c9c2c/Nmf3txrT2n.json' // Confetti style animation
+    });
+  </script>
+
+  <!-- Canvas effect -->
+  <script>
+    const canvas = document.getElementById("background-canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    for (let i = 0; i < 100; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 3 + 1,
+        dx: (Math.random() - 0.5) * 2,
+        dy: (Math.random() - 0.5) * 2
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = '#00c6ff';
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>
