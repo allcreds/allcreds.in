@@ -3,182 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Allcreds</title>
-  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Allcreds Solutions Pvt. Ltd.</title>
+    <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css" />
-<!-- Font Awesome Free via CDNJS (without integrity check) -->
-<!-- Font Awesome (Clean version) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
-<style>
-  .popup-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .popup-content ul li {
-    position: relative;
-    padding-left: 28px;
-    margin-bottom: 15px;
-    font-size: 0.95rem;
-    color: #ffffff;
-    line-height: 1.6;
-  }
-
-  .popup-content ul li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #009ec3;
-    font-weight: bold;
-  }
-
-  .popup-content ul strong {
-    color: #009ec3;
-  }
-</style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html"><img src="images/logo1.png" alt="Allcreds Logo" class="logo" /></a>
-      <nav class="navbar">
-<ul class="nav-links">
-  <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-  <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
-  <li><a href="services.html"><i class="fa-solid fa-gear"></i> Services</a></li>
-  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-  <li><a href="policy.html"><i class="fa-solid fa-shield"></i> Policy</a></li>
-</ul>
-      </nav>
-         <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
+  <!-- ===== Fixed Header Start ===== -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="images/logo1.png" alt="Allcreds Logo" />
     </div>
-    <div class="marquee-right" aria-live="polite">
-  <span>We’re here for you every day — 9:00 AM to 7:00 PM, even on holidays!</span>
-</div>
-  </header>
-  
-    <section class="hero">
-  <video autoplay muted loop playsinline>
-    <source src="video.mp4" type="video/mp4" />
-        </video>
 
-  <div class="hero-content">
-    <div class="hero-left">
-      <h1>Welcome to Allcreds</h1>
-        <h2>We Provide</h2>
-      <span class="typed-text"></span>
+    <!-- Marquee -->
+    <div class="header-marquee">
+      <p>We’re here for you every day — 9:00 AM to 7:00 PM, even on holidays!</p>
     </div>
-    <div class="hero-right">
-  <div class="info-box">
-    <h2>Why Choose Allcreds?</h2>
-    <ul>
-      <li>Fast & Efficient Recovery</li>
-      <li>Trusted BPO Partner</li>
-      <li>Data-Driven Strategies</li>
-      <li>Allover India Reach</li>
+
+    <!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
+  </ul>
+</nav>
+
+  </header>
+  <!-- ===== Fixed Header End ===== -->
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-mask"></div>
+
+    <div class="hero-content">
+      <h2> Wellcome To Allcreds Solutions Pvt. Ltd</h2>
+      <h1>We Provide | <span class="typed-text"></span></h1>
+      <p>Trusted Debt Recovery & BPO Partner</p>
+      <a href="contact.html" class="hero-btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== Problems & Solutions Section ===== -->
+  <section class="problems-section">
+    <div class="container">
+      <div class="problems-text">
+        <h2 class="scroll-element" style="--delay:0.2s">Problems & Solutions</h2>
+        <p class="problem scroll-element" style="--delay:0.4s">
+          <i class="fas fa-times-circle icon-text"></i>
+          Many businesses face delays and losses due to inefficient debt collection processes. Traditional methods are time-consuming and often ineffective, leading to poor cash flow and customer dissatisfaction.
+        </p>
+        <p class="solution scroll-element" style="--delay:0.6s">
+          <i class="fas fa-check-circle icon-text1"></i>
+          At Allcreds, we combine advanced technology with expert strategies to ensure fast, compliant, and effective debt recovery — helping you focus on what matters most: growing your business.
+        </p>
+      </div>
+      <div class="problems-image">
+        <img src="images/Group.png" alt="Problems & Solutions" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features Section ===== -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title scroll-element" style="--delay:0.1s;">Our Key Features</h2>
+
+      <div class="features-grid">
+        <div class="feature-box scroll-element" style="--delay:0.2s;">
+          <i class="fas fa-headset feature-icon"></i>
+          <h3>Support</h3>
+          <p>Our dedicated BPO teams operate round-the-clock to manage customer interactions efficiently, ensuring every query is resolved with professionalism and care.</p>
+        </div>
+
+        <div class="feature-box scroll-element" style="--delay:0.3s;">
+          <i class="fas fa-chart-line feature-icon"></i>
+          <h3>Performance Analytics</h3>
+          <p>Track KPIs and collection performance through our analytics dashboard. We provide transparent reporting and actionable insights.</p>
+        </div>
+
+        <div class="feature-box scroll-element" style="--delay:0.4s;">
+          <i class="fas fa-shield-alt feature-icon"></i>
+          <h3>Compliant Collection Process</h3>
+          <p>Allcreds follows RBI and legal compliance standards to ensure ethical debt collection practices with customer trust.</p>
+        </div>
+
+        <div class="feature-box scroll-element" style="--delay:0.5s;">
+          <i class="fas fa-cogs feature-icon"></i>
+          <h3>End-to-End BPO Solutions</h3>
+          <p>From telecalling to follow-ups, our BPO services manage the full customer lifecycle tailored to your business needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <!-- ===== Debt Recovery Process Section ===== -->
+<section class="debt-process-section">
+  <div class="container">
+    <!-- Left Side: Image -->
+    <div class="debt-image scroll-element" style="--delay:0.2s;">
+      <img src="images/process.png" alt="Debt Recovery Process" />
+    </div>
+
+    <!-- Right Side: Content -->
+    <div class="debt-content scroll-element" style="--delay:0.4s;">
+      <h2>Our Debt Recovery Process</h2>
+      <p>
+        At Allcreds, we follow a structured and compliant approach to ensure maximum recovery rates with minimal friction. 
+        Our trained professionals use advanced analytics, customer profiling, and ethical communication techniques 
+        to engage borrowers effectively.
+      </p>
+      <p>
+        From early bucket reminders to final settlements, our process ensures efficiency, transparency, and adherence 
+        to all regulatory guidelines, helping lenders maintain healthy portfolio performance.
+      </p>
+      <a href="services.html" class="process-btn">Learn More</a>
+    </div>
+  </div>
+</section>
+<section id="bpo-services" class="service-section">
+  <div class="bpo-container">
+    <h2>BPO Services</h2>
+    <p>Allcreds offers comprehensive Business Process Outsourcing (BPO) services tailored to financial institutions, NBFCs, and startups. We help you streamline operations, reduce costs, and improve customer engagement.</p>
+
+    <ul class="bpo-features scroll-section visible">
+      <li>Customer Support (Voice &amp; Non-Voice)</li>
+      <li>Tele-calling &amp; Collection Services</li>
+      <li>Loan Processing &amp; Documentation</li>
+      <li>Data Entry &amp; Verification</li>
+      <li>Email &amp; Chat Support</li>
     </ul>
   </div>
-</div>
-
-  </div>
 </section>
-
-  <script src="js/script.js"></script>
-    <!-- Typed.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  new Typed('.typed-text', {
-    strings: ['Debt Recovery Experts', 'BPO Services You Can Trust', 'Smart Solutions for Smart Business', 'Email and Chat Support'],
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 2000,
-    loop: true
-  });
-</script>
-  
-  <section class="problem-solution">
-  <div class="ps-container">
-    <div class="ps-left">
-  <h2><i class="fas fa-exclamation-circle"></i> Struggling with Debt Recovery?</h2>
-  <p>
-    <i class="fas fa-times-circle icon-text"></i>
-    Many businesses face delays and losses due to inefficient debt collection processes. Traditional methods are time-consuming and often ineffective, leading to poor cash flow and customer dissatisfaction.
-  </p>
-  <p>
-    <i class="fas fa-check-circle icon-text1"></i>
-    At <strong>Allcreds</strong>, we combine advanced technology with expert strategies to ensure fast, compliant, and effective debt recovery — helping you focus on what matters most: growing your business.
-  </p>
-</div>
-    <div class="ps-right">
-      <img src="images/Group.png" alt="Debt Collection Solution" />
-    </div>
-  </div>
-  </section>
-  <hr>
-<section class="features">
-  <div class="features-container">
-    <div class="feature-box">
-      <i class="fas fa-headset"></i>
-      <h3>24/7 Customer Support</h3>
-      <p>
-        Our dedicated BPO teams operate round-the-clock to manage customer interactions efficiently, ensuring every query is resolved with professionalism and care.
-      </p>
-    </div>
-    <div class="feature-box">
-      <i class="fas fa-chart-line"></i>
-      <h3>Performance Analytics</h3>
-      <p>
-        Track KPIs and collection performance through our analytics dashboard. We provide transparent reporting and actionable insights.
-      </p>
-    </div>
-    <div class="feature-box">
-      <i class="fas fa-user-shield"></i>
-      <h3>Compliant Collection Process</h3>
-      <p>
-        Allcreds follows RBI and legal compliance standards to ensure ethical debt collection practices with customer trust.
-      </p>
-    </div>
-    <div class="feature-box">
-      <i class="fas fa-sync-alt"></i>
-      <h3>End-to-End BPO Solutions</h3>
-      <p>
-        From telecalling to follow-ups, our BPO services manage the full customer lifecycle tailored to your business needs.
-      </p>
-    </div>
-  </div>
-</section>
-<hr>
-<section class="debt-process-section">
-  <div class="debt-process-container">
-    <div class="debt-process-image">
-      <img src="images/Process.png" alt="Debt Recovery Process" />
-    </div>
-    <div class="debt-process-text">
-      <h2>How Our Debt Recovery Process Works</h2>
-      <p>
-        At <strong>Allcreds</strong>, our debt recovery process is structured, professional, and fully compliant. We begin by analyzing delinquent accounts, segmenting customers based on risk, and initiating respectful follow-ups via calls, WhatsApp, emails, and SMS.
-      </p>
-      <p>
-        Our trained agents track each stage using advanced tools. Every action is documented in real-time, ensuring transparency, better recovery rates, and an excellent customer experience.
-      </p>
-    </div>
-  </div>
-</section>
-  <hr>
-  <section class="article-section">
+    
+<!-- ===== Article Section ===== -->
+<section class="article-section scroll-element">
   <div class="article-container">
     <h2>Understanding Debt Collection</h2>
     <p class="intro">
       Debt collection is a critical function for financial institutions and businesses to recover outstanding dues while maintaining customer trust. A professional and ethical approach is essential to ensure compliance and preserve long-term relationships.
     </p>
+
     <div class="article-content">
       <div class="article-image">
-        <img src="images/debt.png" alt="Debt Collection Process" />
+        <img src="images/debt.png" alt="Debt Collection Process">
       </div>
+
       <div class="article-text">
         <h3>Key Elements of Ethical Collection</h3>
         <ul>
@@ -187,37 +166,17 @@
           <li><strong>Timely Follow-ups:</strong> Using automated reminders and field agents when necessary.</li>
           <li><strong>Dispute Resolution:</strong> Mechanisms to handle customer concerns fairly.</li>
         </ul>
+
         <p>
           At Allcreds, we implement data-driven collection strategies combined with human-centric communication to recover dues efficiently and ethically.
         </p>
-<div class="read-more-container">
-  <button class="read-more-btn" onclick="openModal()">
-    Read More <span class="arrow">→</span>
-  </button>
-</div>
-        <div id="readMoreModal" class="modal-overlay">
-  <div class="modal-box">
-    <span class="close-btn" onclick="closeModal()">&times;</span>
-    <h2>In-Depth Debt Collection Strategies</h2>
-<div class="popup-content">
-  <ul>
-    <li><strong>Target Audience Sensitivity:</strong> NBFCs and Microfinance institutions serve low-income populations. Collection strategies must be empathetic and respectful.</li>
-    <li><strong>Field-Based Recovery:</strong> Field agents visit borrowers personally, especially in rural areas, to build trust and remind or collect dues.</li>
-    <li><strong>Digital & Automated Reminders:</strong> SMS, WhatsApp, and IVR are used for efficient EMI reminders and reduced manual intervention.</li>
-    <li><strong>Telecalling Support:</strong> Soft calls from trained BPO agents help manage early delinquencies and confirm payments proactively.</li>
-    <li><strong>Compliance with Guidelines:</strong> All recovery steps strictly follow RBI norms and ensure ethical, non-coercive practices.</li>
-    <li><strong>Loan Portfolio Monitoring:</strong> Real-time tracking and analytics tools help identify risky accounts and optimize collection strategies.</li>
-    <li><strong>Settlement & Restructuring Support:</strong> Flexible repayment and settlement options are provided based on borrower circumstances.</li>
-  </ul>
-</div>
-  </div>
-</div>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+    
+    <footer class="footer">
   <div class="footer-container">
     <!-- Left: Contact Form -->
     <div class="footer-form">
@@ -242,10 +201,10 @@
       <p>80 Feet Rd, 8th Block
 Opp: Koramangala Indoor Stadium Back Gate</p>
       <p>Bengaluru, Karnataka 560095.</p>
-      <p>Email: <strong>contact@allcreds.in</strong></p>
+      <p>Email: contact@allcreds.in</p>
     </div>
   </div>
-  <hr>
+    <hr>
   <!-- Social Links -->
 <div class="footer-socials">
     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -256,74 +215,17 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
 
   <div class="footer-bottom">
     <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
-  </div>
- <!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">
+        </div>
+    </footer>
+    
+    <!-- ===== Scroll to Top Button ===== -->
+<div id="scrollTopBtn">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx=25 cy="25" />
+  </svg>
   <i class="fas fa-arrow-up"></i>
-</button>
-<script>
-  const btn = document.getElementById("scrollToTopBtn");
+</div>
 
-  // Show button on scroll
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Scroll to top on click
-  btn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-</script>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-</script>
-  <script>
-  const boxes = document.querySelectorAll('.feature-box');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show'); // Remove this line if you want boxes to stay visible after appearing
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  boxes.forEach(box => observer.observe(box));
-</script>
-  <script>
-  function openModal() {
-    document.getElementById("readMoreModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("readMoreModal").style.display = "none";
-  }
-
-  // Optional: Close modal when clicking outside the box
-  window.onclick = function(event) {
-    const modal = document.getElementById("readMoreModal");
-    if (event.target === modal) {
-      closeModal();
-    }
-  };
-</script>
-</footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
-
