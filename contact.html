@@ -115,23 +115,25 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html"><img src="images/logo1.png" alt="Allcreds Logo" class="logo" /></a>
-      <nav class="navbar">
-<ul class="nav-links">
-  <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-  <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
-  <li><a href="services.html"><i class="fa-solid fa-gear"></i> Services</a></li>
-  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-  <li><a href="policy.html"><i class="fa-solid fa-shield"></i> Policy</a></li>
-</ul>
-      </nav>
-         <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
+    <header class="main-header">
+    <div class="logo">
+      <img src="images/logo1.png" alt="Allcreds Logo" />
     </div>
+
+    <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
+  </ul>
+</nav>
   </header>
+  
     <div class="contact-container">
    <img src="images/contact.jpg" alt="Allcreds Logo" class="image" />
     <div class="form-grid">
@@ -153,8 +155,8 @@
         <p><strong>Street:</strong> 80 Feet Road, 8th Block,</p>
         <p><Strong>Opp:</Strong> Koramangala Indoor Stadium Back Gate</p>
         <p><strong>City & State:</strong> Bengaluru, Karnataka 560095</p>
-        <p><strong>Email:</strong> contact@allcreds.in</p>
-        <p><strong>Phone:</strong> +91 83XXXXXX40</p>
+        <p><strong>Email:</strong> allcredscapital@gmail.com</p>
+        <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
       </div>
     </div>
 
@@ -196,7 +198,7 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
       <p>Email: contact@allcreds.in</p>
     </div>
   </div>
-    <hr>    
+    <hr>
   <!-- Social Links -->
 <div class="footer-socials">
     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -207,41 +209,16 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
 
   <div class="footer-bottom">
     <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
-  </div>
- <!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">
+        </div>
+    </footer>
+    
+    <!-- ===== Scroll to Top Button ===== -->
+<div id="scrollTopBtn">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx="25" cy="25" />
+  </svg>
   <i class="fas fa-arrow-up"></i>
-</button>
-<script>
-  const btn = document.getElementById("scrollToTopBtn");
-
-  // Show button on scroll
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Scroll to top on click
-  btn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-</script>
-      <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-</script>
-</footer>
+</div>
     <script src="js/script.js"></script>
 </body>
-
 </html>
