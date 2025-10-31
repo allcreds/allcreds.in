@@ -24,22 +24,23 @@
 </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html"><img src="images/logo1.png" alt="Allcreds Logo" class="logo" /></a>
-      <nav class="navbar">
-<ul class="nav-links">
-  <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-  <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
-  <li><a href="services.html"><i class="fa-solid fa-gear"></i> Services</a></li>
-  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-  <li><a href="policy.html"><i class="fa-solid fa-shield"></i> Policy</a></li>
-</ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
+<header class="main-header">
+    <div class="logo">
+      <img src="images/logo1.png" alt="Allcreds Logo" />
     </div>
+
+    <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
+  </ul>
+</nav>
   </header>
 <section class="services-section">
   <div class="tagline-wrapper">
@@ -149,38 +150,7 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
   <div class="footer-bottom">
     <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
   </div>
- <!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-<script>
-  const btn = document.getElementById("scrollToTopBtn");
 
-  // Show button on scroll
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Scroll to top on click
-  btn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-</script>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const scrollElements = document.querySelectorAll(".scroll-section");
@@ -200,10 +170,15 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
     scrollElements.forEach(el => observer.observe(el));
   });
 </script>
-
+    <!-- ===== Scroll to Top Button ===== -->
+<div id="scrollTopBtn">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx=25 cy="25" />
+  </svg>
+  <i class="fas fa-arrow-up"></i>
+</div>
 </footer>
   <script src="js/script.js"></script>
 
 </body>
 </html>
-
