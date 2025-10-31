@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Privacy Policy - Allcreds Solutions</title>
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="images/logo.png"/>
       <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
@@ -50,22 +50,23 @@
   </style>
 </head>
 <body>
-      <header class="header">
-    <div class="container">
-      <a href="index.html"><img src="images/logo1.png" alt="Allcreds Logo" class="logo" /></a>
-      <nav class="navbar">
-<ul class="nav-links">
-  <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-  <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
-  <li><a href="services.html"><i class="fa-solid fa-gear"></i> Services</a></li>
-  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-  <li><a href="policy.html"><i class="fa-solid fa-shield"></i> Policy</a></li>
-</ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-        </nav>
+<header class="main-header">
+    <div class="logo">
+      <img src="images/logo1.png" alt="Allcreds Logo" />
     </div>
+
+    <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
+  </ul>
+</nav>
   </header>
   <div class="container1">
     <div class="lang-toggle">
@@ -107,8 +108,7 @@
       <h2>10. Contact</h2>
       <p><strong>Allcreds Solutions Private Limited</strong><br>
       No. 852, 3rd Floor, 8th Block, Koramangala, Bangalore, Bangalore South, Karnataka, India, 560034<br>
-      Email: contact@allcreds.in<br>
-      Phone: +91-83*****40</p>
+      Email: contact@allcreds.in</p>
     </div>
 
     <div id="hindi" style="display:none">
@@ -146,8 +146,7 @@
       <h2>10. संपर्क</h2>
       <p><strong>Allcreds Solutions Private Limited</strong><br>
       No. 852, 3rd Floor, 8th Block, Koramangala, Bangalore, Bangalore South, Karnataka, India, 560034<br>
-      Email: contact@allcreds.in<br>
-      Phone: +91-83*****40</p>
+      Email: contact@allcreds.in<br></p>
     </div>
   </div>
 
@@ -169,9 +168,57 @@
       button.textContent = "Switch to Hindi / हिंदी में बदलें";
     }
   }
-</script>
-<script src="js/script.js"></script>
+</script><br>
+    <footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Contact Form -->
+    <div class="footer-form">
+      <h3>Quick Contact</h3>
+<form action="https://formsubmit.co/allcredscapital@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://allcreds.in/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required="">
+        <input type="text" name="number" placeholder="Your Number" required="">
+        <input type="email" name="email" placeholder="Your Email" required="">
+        <textarea name="message" rows="3" placeholder="Your Message" required=""></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+
+    <!-- Right: Address -->
+    <div class="footer-address">
+      <h3>Our Address</h3>
+      <p><strong>Allcreds Solutions Pvt. Ltd.</strong></p>
+      <p>862, Prabhat Arcade, 3rd Floor,</p>
+      <p>80 Feet Rd, 8th Block
+Opp: Koramangala Indoor Stadium Back Gate</p>
+      <p>Bengaluru, Karnataka 560095.</p>
+      <p>Email: contact@allcreds.in</p>
+    </div>
+  </div>
+    <hr>
+  <!-- Social Links -->
+<div class="footer-socials">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- ===== Scroll to Top Button ===== -->
+<div id="scrollTopBtn">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx=25 cy="25" />
+  </svg>
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-
