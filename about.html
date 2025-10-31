@@ -3,185 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
-  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>About Us</title>
+    <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css" />
-<!-- Font Awesome Free via CDNJS (without integrity check) -->  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    .about-section {
-      position: relative;
-        width: 100%;
-      height: 500px;
-        padding: 100px;
-      color: white;
-    }
-    .about-section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 750px;
-      background: url('images/about.png') no-repeat center center/cover;
-      z-index: -2;
-    }
-    .about-section::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-      z-index: -1;
-    }
-    .about-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .about-text {
-      font-size: 1.5rem;
-      flex: 1 1 50%;
-      padding: 100px;
-        color: white;
-    }
-      .about-text h1{
-  color: #009ec3;
-  }
-  .scroll-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* When in view */
-.scroll-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-  </style>
 </head>
 <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- ===== Fixed Header Start ===== -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="images/logo1.png" alt="Allcreds Logo" />
+    </div>
 
-  <header class="header">
-    <div class="container">
-      <a href="index.html"><img src="images/logo1.png" alt="Allcreds Logo" class="logo" /></a>
-      <nav class="navbar">
-<ul class="nav-links">
-  <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-  <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
-  <li><a href="services.html"><i class="fa-solid fa-gear"></i> Services</a></li>
-  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-  <li><a href="policy.html"><i class="fa-solid fa-shield"></i> Policy</a></li>
-</ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </div>
+    <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
+  </ul>
+</nav>
+
   </header>
-    <section class="about-section">
-    <div class="container about-container">
-      <div class="about-text scroll-section">
-        <h1>About Allcreds</h1>
-        <p>Allcreds is a trusted provider of professional debt recovery services and BPO solutions. With years of experience, we help financial institutions and businesses recover overdue payments through ethical and efficient processes. Our team combines technology, strategy, and compliance to deliver results that enhance your bottom line.</p>
-        <p>We also specialize in providing Business Process Outsourcing (BPO) services tailored to our clients' needs, ensuring operational efficiency and cost savings. Our commitment to integrity, professionalism, and client satisfaction sets us apart in the industry.</p>
-      </div>
-    </div>
-  </section>
-<section class="how-we-started">
-  <div class="container">
-    <h2>How We Started</h2>
-    <ul class="started-points scroll-section">
-      <li>Allcreds began with a clear mission: to revolutionize debt recovery services using a transparent and client-first approach.</li>
-      <li>Founded by industry experts, our journey started in a small office with big ideas and a vision to deliver smarter, ethical recovery solutions.</li>
-      <li>Through dedication and innovation, we've grown into a trusted partner for financial institutions and businesses across the country.</li>
-    </ul>
+  
+<!-- ===== About Section ===== -->
+<section class="about-hero scroll-element">
+  <div class="about-bg"></div>
+  <div class="about-overlay"></div>
+  <div class="about-content">
+    <h1>About <span>Allcreds</span></h1>
+    <p>
+      Allcreds Solutions Private Limited is a professional debt recovery and BPO service provider dedicated to helping financial institutions and corporates streamline their operations.
+    </p>
+    <p>
+      We combine technology, analytics, and human expertise to ensure ethical, efficient, and result-driven recovery and customer engagement solutions.
+    </p>
   </div>
 </section>
-    <section class="core-values">
-  <div class="container">
-  <h2 class="section-heading">Our Core Values</h2>      
-    <div class="values-grid scroll-section">
-      <div class="value-box">
-        <i class="fas fa-handshake"></i>
+  
+<!-- ===== How We Started Section ===== -->
+<section class="how-we-started scroll-element">
+  <div class="how-container">
+    <div class="how-left">
+      <h2 class="section-heading">How We Started</h2>
+    </div>
+    <div class="how-right">
+      <div class="story-content">
+        <p><i class="fas fa-check-circle icon-green"></i>
+          Allcreds Solutions was founded with a clear mission — to bridge the gap between financial institutions and customers through ethical and efficient recovery solutions.
+        </p>
+        <p><i class="fas fa-check-circle icon-green"></i>
+          Our journey began with a passionate team of professionals who believed in the power of transparency, technology, and trust in building long-term partnerships.
+        </p>
+        <p><i class="fas fa-check-circle icon-green"></i>
+          Today, Allcreds stands as a trusted partner for NBFCs, banks, and enterprises, offering end-to-end BPO and recovery support backed by compliance and innovation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Our Core Values Section ===== -->
+<section class="core-values scroll-element">
+  <div class="values-container">
+    <div class="values-left">
+      <h2 class="values-heading">Our Core Values</h2>
+    </div>
+    <div class="values-right">
+      <div class="value-card">
+        <i class="fas fa-handshake icon-blue"></i>
         <h3>Integrity</h3>
         <p>We operate with honesty and uphold the highest ethical standards in all our interactions and processes.</p>
       </div>
-      <div class="value-box">
-        <i class="fas fa-bolt"></i>
+      <div class="value-card">
+        <i class="fas fa-bolt icon-blue"></i>
         <h3>Efficiency</h3>
         <p>We streamline debt recovery and BPO operations through agile strategies and advanced technology.</p>
       </div>
-      <div class="value-box">
-        <i class="fas fa-users-cog"></i>
+      <div class="value-card">
+        <i class="fas fa-users-cog icon-blue"></i>
         <h3>Client Focus</h3>
         <p>We listen, understand, and tailor our services to meet each client’s specific needs and expectations.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="why-choose-us">
-  <h2 class="section-heading">Why Choose Allcreds</h2>
-  <div class="reasons-grid scroll-section">
-    <div class="reason-box">
-      <i class="fas fa-handshake"></i>
-      <h3>Trusted Expertise</h3>
-      <p>We bring years of industry knowledge to ensure ethical and efficient debt recovery.</p>
-    </div>
-    <div class="reason-box">
-      <i class="fas fa-cogs"></i>
-      <h3>Custom Solutions</h3>
-      <p>Tailored strategies that align with your unique business goals and challenges.</p>
-    </div>
-    <div class="reason-box">
-      <i class="fas fa-lock"></i>
-      <h3>Secure & Compliant</h3>
-      <p>We strictly adhere to compliance regulations to keep your data secure.</p>
-    </div>
-    <div class="reason-box">
-      <i class="fas fa-chart-line"></i>
-      <h3>Results Driven</h3>
-      <p>Our performance-focused approach ensures maximum recovery and client satisfaction.</p>
+
+<!-- ===== Why Choose Allcreds Section ===== -->
+<section class="why-choose scroll-element">
+  <div class="choose-container">
+    <h2 class="choose-heading">Why Choose Allcreds</h2>
+
+    <div class="choose-grid">
+      <div class="choose-card">
+        <i class="fas fa-handshake icon-blue"></i>
+        <h3>Trusted Expertise</h3>
+        <p>We bring years of industry knowledge to ensure ethical and efficient debt recovery.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-cogs icon-blue"></i>
+        <h3>Custom Solutions</h3>
+        <p>Tailored strategies that align with your unique business goals and challenges.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-lock icon-blue"></i>
+        <h3>Secure &amp; Compliant</h3>
+        <p>We strictly adhere to compliance regulations to keep your data secure.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-chart-line icon-blue"></i>
+        <h3>Results Driven</h3>
+        <p>Our performance-focused approach ensures maximum recovery and client satisfaction.</p>
+      </div>
     </div>
   </div>
 </section>
-<section class="team-section">
-  <h2 class="section-heading">Meet Our Leadership Team</h2>
-  <div class="team-grid scroll-section">
-    <div class="team-member">
-      <img src="images/avatar.png" alt="logo" class="avatar" />
-      <h4>Ramya G</h4>
-      <p>Founder & Director</p>
+
+  <!-- ===== Leadership Team Section ===== -->
+<section class="leadership scroll-element">
+  <div class="leader-container">
+    <h2 class="leader-heading">Meet Our Leadership Team</h2>
+
+    <div class="leader-grid">
+      <div class="leader-card">
+        <div class="leader-img">
+          <img src="images/avatar.png" alt="Ramya G">
+        </div>
+        <h3>Ramya G</h3>
+        <p>Founder & Director</p>
+      </div>
+
+      <div class="leader-card">
+        <div class="leader-img">
+          <img src="images/avatar.png" alt="Selvarani">
+        </div>
+        <h3>Selvarani</h3>
+        <p>Managing Director</p>
+      </div>
+
+      <div class="leader-card">
+        <div class="leader-img">
+          <img src="images/avatar.png" alt="Suman">
+        </div>
+        <h3>Suman</h3>
+        <p>Operation Manager</p>
+      </div>
     </div>
-    <div class="team-member">
-      <img src="images/avatar.png" alt="logo" class="avatar" />
-      <h4>Selvarani</h4>
-      <p>Managing Director</p>
-    </div>
-    <div class="team-member">
-      <img src="images/avatar.png" alt="logo" class="avatar" />
-      <h4>Suman</h4>
-      <p>Operation Manager</p>
+
+    <div class="join-team">
+      <p>Join us and make a difference.</p>
+      <a href="contact.html" class="btn-join">Join Our Team</a>
     </div>
   </div>
-    <div class="team-cta">
-  <p>Join us and make a difference.</p>
-  <a href="contact.html" class="cta-button">Join Our Team</a>
-</div>
 </section>
-
-
     <footer class="footer">
   <div class="footer-container">
     <!-- Left: Contact Form -->
@@ -210,72 +191,27 @@ Opp: Koramangala Indoor Stadium Back Gate</p>
       <p>Email: contact@allcreds.in</p>
     </div>
   </div>
-  <hr>
+    <hr>
   <!-- Social Links -->
 <div class="footer-socials">
-    <a href="#"> <i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="-blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
   </div>
 
   <div class="footer-bottom">
     <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
-  </div>
- <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-<script>
-  const btn = document.getElementById("scrollToTopBtn");
-
-  // Show button on scroll
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Scroll to top on click
-  btn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-</script>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
-      <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll(".scroll-section");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        } else {
-          entry.target.classList.remove("visible"); // fade out again if desired
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    scrollElements.forEach(el => observer.observe(el));
-  });
-</script>
-</footer>
-  <script src="js/script.js"></script>
+        </div>
+    </footer>
+    
+    <!-- ===== Scroll to Top Button ===== -->
+<div id="scrollTopBtn">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx="25" cy="25" />
+  </svg>
+  <i class="fas fa-arrow-up"></i>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
-
-
