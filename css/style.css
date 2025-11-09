@@ -1640,3 +1640,57 @@ input[type="file"] {
   margin-top: 10px;
   padding: 5px;
 }
+
+/* ===== WhatsApp Floating Button (Partial Peek + Slide) ===== */
+.whatsapp-hover-area {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+}
+
+/* Button style */
+.whatsapp-float {
+  position: absolute;
+  top: 50%;
+  right: -40px; /* half hidden */
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: right 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* When hovered or cursor nearby */
+.whatsapp-hover-area.active .whatsapp-float,
+.whatsapp-hover-area:hover .whatsapp-float {
+  right: 20px; /* fully visible */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Hover color */
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+}
+
+/* Mobile view — always visible */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+}
