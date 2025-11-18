@@ -155,3 +155,41 @@ const showOnScroll = () => {
 };
 window.addEventListener('scroll', showOnScroll);
 showOnScroll();
+
+// ===== Animated Counter (reload on scroll) =====
+
+const counters = document.querySelectorAll(".result-number");
+let options = {
+  threshold: 0.5, // Trigger animation when 50% of section is visible
+};
+
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      counters.forEach(counter => {
+        animateCounter(counter);
+      });
+    }
+  });
+}, options);
+
+document.querySelectorAll(".results-section").forEach(sec => {
+  observer.observe(sec);
+});
+
+function animateCounter(counter) {
+  let target = +counter.getAttribute("data-value");
+  let current = 0;
+  let speed = 15; // increase = faster
+
+  counter.textContent = "0%";
+
+  let interval = setInterval(() => {
+    current++;
+    counter.textContent = current + "%";
+
+    if (current >= target) {
+      clearInterval(interval);
+    }
+  }, speed);
+}
