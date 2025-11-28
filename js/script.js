@@ -6,35 +6,36 @@ window.addEventListener("scroll", () => {
     header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
   }
 });
-const texts = [
-    "Debt-Recovery-Experts",  
-    "BPO-Services",
-    "EMail-Chat-Process",
-    "KYC-Verification",
-    "Smart-Solutions-for-Smart-Business"
-];
 
-let textIndex = 0;
-const neonEl = document.getElementById("neonText");
+// ===== Typed Text Effect =====
+const typedText = document.querySelector(".typed-text");
+const words = ["Debt Recovery Experts", "Debt Recovery Experts", "BPO Services", "Smart Solutions for Smart Business"];
+let wordIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+let typeSpeed = 80;
 
-function showNeonText() {
-    neonEl.innerHTML = ""; // Clear old text
-    const phrase = texts[textIndex];
-    
-    phrase.split("").forEach((char, i) => {
-        const span = document.createElement("span");
-        span.textContent = char;
-        neonEl.appendChild(span);
-        setTimeout(() => span.classList.add("show"), 60 * i);
-    });
+function type() {
+  const currentWord = words[wordIndex];
+  if (isDeleting) {
+    typedText.textContent = currentWord.substring(0, letterIndex--);
+  } else {
+    typedText.textContent = currentWord.substring(0, letterIndex++);
+  }
 
-    textIndex = (textIndex + 1) % texts.length;
-
-    setTimeout(showNeonText, phrase.length * 70 + 1200);
+  if (!isDeleting && letterIndex === currentWord.length + 1) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else if (isDeleting && letterIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    setTimeout(type, 500);
+  } else {
+    setTimeout(type, typeSpeed);
+  }
 }
 
-showNeonText();
-
+document.addEventListener("DOMContentLoaded", type);
 
 // ===== IntersectionObserver for repeated scroll-in animations =====
 (function () {
