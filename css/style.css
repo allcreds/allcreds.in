@@ -180,6 +180,12 @@ background: linear-gradient(135deg, #0ca1ca, #59d9fe);
   padding: 0 20px;
 }
 
+.hero-content h1 {
+  font-size: 35px;
+  color: #e6fc0e;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 .hero-content h2 {
   font-size: 40px;
   font-weight: 700;
@@ -1857,30 +1863,4 @@ input[type="file"] {
     padding: 10px 18px;
     font-size: 15px;
   }
-}
-
-.neon-container {
-    text-align: center;
-}
-
-.neon {
-    font-weight: 700;
-    font-size: 38px;
-    color: #eae996;
-    letter-spacing: 1px;
-}
-
-.neon span {
-    opacity: 0;
-    display: inline-block;
-    transform: translateY(6px);
-    transition: all 0.15s ease-out;
-}
-
-.neon span.show {
-    opacity: 1;
-    transform: translateY(0);
-    text-shadow: 
-        0 0 12px rgba(124, 58, 237, 0.9),
-        0 0 32px rgba(99, 102, 241, 0.6);
 }
