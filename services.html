@@ -1,237 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Services</title>
-  <link rel="icon" href="images/logo.png" />
-  <link rel="stylesheet" href="css/style.css" />
-<!-- Font Awesome Free via CDNJS (without integrity check) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<style>
-/* Hidden by default */
-.scroll-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-/* When in view */
-.scroll-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Allcreds</title>
+
+<link rel="icon" href="images/logo.png">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-<header class="main-header">
-    <div class="logo">
-      <img src="images/logo1.png" alt="Allcreds Logo" />
-    </div>
 
-    <!-- Hamburger Menu -->
-  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+<header class="header">
 
-<nav class="nav-menu">
-  <ul>
-    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
-    <li><a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
-    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-    <li><a href="policy.html" class="nav-link"><i class="fa-solid fa-shield"></i> Policy</a></li>
-  </ul>
+<div class="logo">
+<img src="images/logo1.png" class="animated-logo" alt="Allcreds Logo">
+</div>
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="nav" id="nav-menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="policy.html">Policy</a>
 </nav>
-  </header>
-<section class="services-section">
-  <div class="tagline-wrapper">
-    <h1>Our Services</h1>
-    <p class="tagline">Strategic. Scalable. Reliable.</p>
-  </div>
-    <p class="overview">
-      At Allcreds, we specialize in providing end-to-end services that help financial institutions and businesses streamline their operations and maximize recovery efficiency. Our offerings cover professional <strong>Debt Recovery</strong>, smart <strong>BPO Solutions</strong>, and seamless <strong>Customer Support</strong> — all tailored to meet your organizational goals with precision and compliance.
-    </p>
-    <div class="highlights scroll-section">
-      <div class="highlight-box ">
-        <i class="fas fa-indian-rupee-sign"></i>
-        <h3>Debt Recovery Services</h3>
-        <p>Our ethical and technology-driven approach ensures higher recovery rates with full regulatory compliance.</p>
-      </div>
-      <div class="highlight-box">
-        <i class="fas fa-headset"></i>
-        <h3>Customer Support & BPO</h3>
-        <p>We handle inbound/outbound support, KYC verification, lead management and backend processing 24/7.</p>
-      </div>
-      <div class="highlight-box">
-        <i class="fas fa-search-location"></i>
-        <h3>Skip Tracing</h3>
-        <p>Our skilled agents and tools help locate absconding customers and conduct professional field visits.</p>
-      </div>
-    </div>
-</section>
-<section class="why-choose-us">
-  <div class="why-choose-us-container">
-    <h2 class="section-title">Why Choose Us</h2>
-    <div class="service-grid scroll-section">
-      <div class="service-box">
-        <i class="fas fa-user-shield"></i>
-        <h3>Trusted Compliance</h3>
-        <p>We strictly follow regulatory guidelines and ethical practices, ensuring secure and transparent processes for all recovery and BPO operations.</p>
-      </div>
-      <div class="service-box">
-        <i class="fas fa-bolt"></i>
-        <h3>Quick Turnaround</h3>
-        <p>Our agile operations enable fast execution and prompt resolution of cases, keeping your business moving efficiently.</p>
-      </div>
-      <div class="service-box">
-        <i class="fas fa-headset"></i>
-        <h3>24/7 Support</h3>
-        <p>Our dedicated support team is available around the clock to assist with queries, feedback, and real-time updates.</p>
-      </div>
-      <div class="service-box">
-        <i class="fas fa-chart-line"></i>
-        <h3>Result-Oriented</h3>
-        <p>We focus on delivering measurable outcomes and high recovery success rates that directly benefit your bottom line.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="bpo-services" class="service-section">
-  <div class="bpo-container">
-    <h2>BPO Services</h2>
-    <p>Allcreds offers comprehensive Business Process Outsourcing (BPO) services tailored to financial institutions, NBFCs, and startups. We help you streamline operations, reduce costs, and improve customer engagement.</p>
+</header>
 
-    <ul class="bpo-features scroll-section">
-      <li>Customer Support (Voice & Non-Voice)</li>
-      <li>Tele-calling & Collection Services</li>
-      <li>Loan Processing & Documentation</li>
-      <li>Data Entry & Verification</li>
-      <li>Email & Chat Support</li>
-    </ul>
-  </div>
-</section>
-<section class="results-section">
-  <div class="results-header">
-    <h2>Our Results & Performance</h2>
-    <p>We deliver strong recovery outcomes through analytics, automation, and multi-channel strategies.</p>
-  </div>
 
-  <div class="results-grid">
+<section class="page-banner">
 
-    <div class="result-box">
-      <div class="result-number" data-value="92">0%</div>
-      <p>Right Party Contacts Improved</p>
-    </div>
+<div class="banner-overlay"></div>
 
-    <div class="result-box">
-      <div class="result-number" data-value="78">0%</div>
-      <p>Resolution Efficiency Boost</p>
-    </div>
+<div class="banner-content">
 
-    <div class="result-box">
-      <div class="result-number" data-value="65">0%</div>
-      <p>Faster Follow-up Turnaround</p>
-    </div>
+<h1>Our Services</h1>
 
-    <div class="result-box">
-      <div class="result-number" data-value="44">0%</div>
-      <p>Drop in Unresponsive Cases</p>
-    </div>
+<p>Professional Debt Recovery Solutions</p>
 
-  </div>
-</section>
-    <footer class="footer">
-  <div class="footer-container">
-    <!-- Left: Contact Form -->
-    <div class="footer-form">
-      <h3>Quick Contact</h3>
-<form action="https://formsubmit.co/allcredscapital@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://allcreds.in/thankyou.html">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your Name" required="">
-        <input type="text" name="number" placeholder="Your Number" required="">
-        <input type="email" name="email" placeholder="Your Email" required="">
-        <textarea name="message" rows="3" placeholder="Your Message" required=""></textarea>
-        <button type="submit">Submit</button>
-      </form>
-
-    </div>
-
-    <!-- Right: Address -->
-    <div class="footer-address">
-      <h3>Our Address</h3>
-      <p><strong>Allcreds Solutions Pvt. Ltd.</strong></p>
-      <p>GVR Spaces, 2nd floor</p>
-      <p>BBMP Khata no.41/2, Hosur-Sarjapur Road</p>
-      <p>Bengaluru, Bengaluru Urban, Karnataka, 560102</p>
-      <p>Email: contact@allcreds.in</p>
-    </div>
-  </div>
-    <hr>
-  <!-- Social Links -->
-<div class="footer-socials">
-    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 Allcreds Solutions Private Limited. All rights reserved.</p>
-  </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll(".scroll-section");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        } else {
-          entry.target.classList.remove("visible"); // fade out again if desired
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    scrollElements.forEach(el => observer.observe(el));
-  });
-</script>
-    <!-- ===== Scroll to Top Button ===== -->
-<div id="scrollTopBtn">
-  <svg class="progress-ring" width="50" height="50">
-    <circle class="progress-ring__circle" stroke="#009ec3" stroke-width="4" fill="transparent" r="22" cx=25 cy="25" />
-  </svg>
-  <i class="fas fa-arrow-up"></i>
 </div>
+
+</section>
+    
+  <section class="services-detailed">
+
+<div class="container">
+
+<h2 class="section-title">Professional Recovery Services</h2>
+
+<div class="service-row">
+
+<div class="service-icon">
+<i class="fa-solid fa-hand-holding-dollar"></i>
+</div>
+
+<div class="service-content">
+<h3>Debt Recovery</h3>
+<p>
+We help businesses recover overdue payments through structured
+collection strategies, professional negotiations, and legally
+compliant recovery methods.
+</p>
+</div>
+
+</div>
+
+
+<div class="service-row">
+
+<div class="service-icon">
+<i class="fa-solid fa-scale-balanced"></i>
+</div>
+
+<div class="service-content">
+<h3>Legal Collections</h3>
+<p>
+Our legal experts assist in structured legal recovery including
+legal notices, documentation support, and dispute resolution
+processes.
+</p>
+</div>
+
+</div>
+
+
+<div class="service-row">
+
+<div class="service-icon">
+<i class="fa-solid fa-magnifying-glass-location"></i>
+</div>
+
+<div class="service-content">
+<h3>Skip Tracing</h3>
+<p>
+We locate hard-to-reach debtors using advanced investigation
+techniques, verified databases, and field intelligence.
+</p>
+</div>
+
+</div>
+
+
+<div class="service-row">
+
+<div class="service-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+
+<div class="service-content">
+<h3>Telecalling Recovery</h3>
+<p>
+Professional call center recovery teams follow structured
+communication strategies to achieve faster payment settlements.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+    <section class="service-benefits">
+
+<div class="container">
+
+<h2 class="section-title">Why Businesses Choose Our Services</h2>
+
+<div class="benefits-grid">
+
+<div class="benefit-box">
+<i class="fa-solid fa-shield-halved"></i>
+<h4>Legal Compliance</h4>
+<p>All recovery activities follow legal and ethical guidelines.</p>
+</div>
+
+<div class="benefit-box">
+<i class="fa-solid fa-chart-line"></i>
+<h4>High Recovery Success</h4>
+<p>Proven strategies to maximize recovery results.</p>
+</div>
+
+<div class="benefit-box">
+<i class="fa-solid fa-users"></i>
+<h4>Expert Recovery Team</h4>
+<p>Experienced professionals with strong negotiation skills.</p>
+</div>
+
+<div class="benefit-box">
+<i class="fa-solid fa-clock"></i>
+<h4>Fast Recovery Process</h4>
+<p>Efficient workflow for quicker payment resolution.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+    <section class="cta-section">
+
+<div class="container">
+
+<h2>Need Help Recovering Outstanding Payments?</h2>
+
+<p>Our experts are ready to assist you with professional recovery solutions.</p>
+
+<a href="contact.html" class="cta-btn">Contact Us</a>
+
+</div>
+
+</section>
+    
+  <footer class="footer">
+
+<div class="container">
+
+<div class="footer-contact">
+
+<h3>Allcreds Solutions Pvt. Ltd</h3>
+
+<p>📍 Bangalore, India</p>
+
+<p>📞 +91 9880488240</p>
+
+<p>✉ contact@allcreds.in</p>
+
+<div class="footer-social">
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Allcreds Solutions Pvt. Ltd. All Rights Reserved.</p>
+</div>
+
 </footer>
-
-  <!-- WhatsApp Floating Button (Peek + Slide In) -->
-<div class="whatsapp-hover-area">
-  <a href="https://wa.me/919880488240?text=Hello%20Allcreds%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
-     class="whatsapp-float" 
-     target="_blank" 
-     title="Chat with us on WhatsApp">
-     <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
-<script>
-  const hoverArea = document.querySelector('.whatsapp-hover-area');
-  document.addEventListener('mousemove', (e) => {
-    const windowWidth = window.innerWidth;
-    if (windowWidth - e.clientX < 100) {
-      hoverArea.classList.add('active');
-    } else {
-      hoverArea.classList.remove('active');
-    }
-  });
-</script>
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
-
-
-
-
